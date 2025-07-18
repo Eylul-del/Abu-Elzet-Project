@@ -1,0 +1,195 @@
+/*root colors*/
+
+:root{
+    --mainPurple: #605BFF;
+    --navGray: #717680;
+    --borderColor: #D5D7DA;
+}
+
+@font-face {
+  font-family: 'TajawalMedium';
+  src: url('/font/Tajawal-Medium.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalExtraLight';
+  src: url('/font/Tajawal-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalLight';
+  src: url('/font/Tajawal-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalRegular';
+  src: url('/font/Tajawal-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalBold';
+  src: url('/font/Tajawal-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalExtraBold';
+  src: url('/font/Tajawal-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalBlack';
+  src: url('/font/Tajawal-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+body{
+    background-color: white;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    transform: translateY(0);
+}
+
+.myStocksContent{
+    display: flex;
+    gap: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.personelInfoContent .sideBar a{
+    display: block;
+}
+
+.sideBar{
+    width: 379px;
+    height: 444px;
+    box-sizing: border-box;
+    padding: 32px 8px 8px;
+    gap: 8px;
+}
+
+.sideBar a{
+    width: 363px;
+    height: 68px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 18px 16px;
+    gap: 8px;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.sideBar a:hover{
+    background-color: #615bffb3;
+    color: white !important;
+}
+
+.selected{
+    background-color: var(--mainPurple);
+    color: white !important;
+}
+
+.sideBar .logOut{
+    color: #D92D20;
+}
+
+.saleStocks{
+    width: 140px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--mainPurple);
+    color: var(--mainPurple);
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: 'TajawalBold';
+    gap: 48px;
+    position: relative;
+    left: -668px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.yourStocks{
+    width: 829px;
+    height: 444px;
+    gap: 0px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.yourStocks .saleStocks{
+    display: block !important;
+}
+
+.yourStocks .stocksChange{
+    width: 375px;
+    height: 155px;
+    border-radius: 8px;
+    border: 1px solid #A09DFF;
+}
+
+.stocksChange:first-child .stockPrice{
+    justify-content: right;
+    padding-right: 30px;
+}
+
+.stocksChange .stockPrice,
+.stockGraph{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.stocksChange{
+    box-shadow: 0 8px 16px -2px #0A0D121A;
+}
+
+.stocksChange .stockGraph p{
+    color: var(--mainPurple);
+    font-family: 'TajawalBold';
+    font-size: 30px;
+}
+
+.stockGraph p span{
+    font-size: 18px;
+}
+
+.stockGraph img{
+    width: 96px;
+    height: 48px;
+}
+
+.stockPrice p:first-child{
+    color: #414651;
+    font-family: 'TajawalBold';
+    font-size: 18px;
+}
+
+.stockPrice p:last-child{
+    color: #027A48;
+    font-size: 18px;
+    font-family: 'TajawalBold';
+}

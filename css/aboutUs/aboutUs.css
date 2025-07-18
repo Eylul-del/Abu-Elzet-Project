@@ -1,0 +1,273 @@
+/*root colors*/
+
+:root{
+    --mainPurple: #605BFF;
+    --navGray: #717680;
+}
+
+/*fonts*/
+
+@font-face {
+  font-family: 'TajawalMedium';
+  src: url('/font/Tajawal-Medium.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalExtraLight';
+  src: url('/font/Tajawal-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalLight';
+  src: url('/font/Tajawal-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalRegular';
+  src: url('/font/Tajawal-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalBold';
+  src: url('/font/Tajawal-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalExtraBold';
+  src: url('/font/Tajawal-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalBlack';
+  src: url('/font/Tajawal-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+/*
+*{
+     outline: 1px solid  limegreen; 
+}
+*/
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+footer,
+.bePartnerThree{
+    transform: translateY(0px);
+    position: relative;
+}
+
+
+.aboutUsMain{
+    width: 100%;
+    height: 1380px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 48px 100px;
+    gap: 48px;
+    background-color: white;
+}
+
+.aboutUsHeader{
+    width: 1240px;
+    height: 36px;
+    font-size: 30px;
+    font-family: 'TajawalBold';
+}
+
+.aboutUsHeader p{
+    justify-content: center;
+    align-items: center;
+    color: var(--mainPurple);
+}
+
+.aboutUsInfo{
+    width: 1240px;
+    height: 372px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 48px 0;
+}
+
+.aboutUsInfo div{
+    width: 362px;
+    height: 276px;
+    border-radius: 24px;
+    box-sizing: border-box;
+    padding: 32px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-shadow: 0 24px 48px -12px #3e3bff1f;
+}
+
+.aboutUsInfo .title{
+    width: 298px;
+    height: 15px;
+    font-size: 24px;
+    font-family: 'TajawalBold';
+    justify-content: center;
+    
+    color: var(--mainPurple);
+}
+
+.aboutUsInfo p:last-child{
+    height: 169px;
+    height: 298px;
+    font-family: 'TajawalRegular';
+    font-size: 18px;
+    color: #181D27;
+    line-height: 26px;
+}
+
+.aboutUsInfo .ourMission,
+.ourMission p,
+.ourMission .title{
+    background-color: var(--mainPurple);
+    color: white !important;
+}
+
+.team{
+    width: 1240px;
+    height: 312px;
+    box-sizing: border-box;
+    padding: 48px 0;
+    gap: 64px;
+    align-items: center;
+}
+
+.personals{
+    width: inherit;
+    height: 137px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.personal{
+    width: 248px;
+    height: 137px;
+    align-items: center;
+}
+
+.personal img{
+    height: 80px;
+    width: 80px;
+}
+
+.personal .personalInfo{
+    width: 248px;
+    height: 37px;
+    gap: 16px;
+}
+
+.personalInfo p:first-child{
+    width: inherit;
+    height: 11px;
+    font-size: 18px;
+    font-family: 'TajawalBold';
+    text-align: center;
+}
+
+.personalInfo p:last-child{
+    text-align: center;
+    width: inherit;
+    height: 10px;
+    font-family: 'TajawalLight';
+    line-height: 22px;
+    font-size: 16px;
+    color: var(--mainPurple);
+    justify-content: center;
+}
+
+
+
+.clients{
+    width: 1240px;
+    height: 269px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.outClientSays .title{
+    font-family: 'TajawalBold';
+    font-size: 24px;
+    text-align: center;
+}
+
+.clients .client{
+    width: 370px;
+    height: 269px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 24px 48px -12px #3e3bff1f;
+}
+
+.clientInner{
+    width: 289px;
+    height: 218px;
+}
+
+.clientInner p{
+    width: inherit;
+    height: 98px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #181D27;
+}
+
+.clientInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 26px;
+    position: relative;
+    top: 30px;
+}
+
+.clientInfo img{
+    width: 56px;
+    height: 56px;
+}
+
+.cleintName{
+    display: flex;
+    justify-content: center;
+    height: 87px;
+    height: 29px;
+}
+
+.cleintName p:first-child{
+    display: flex;
+    align-items: center;
+    width: inherit;
+    height: 11px;
+    font-family: 'TajawalBold';
+    font-size: 18px;
+    position: relative;
+    bottom: -12px;
+}
+
+.cleintName p:last-child{
+    width: 54;
+    height: 10px;
+    font-family: 'TajawalRegular';
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -14px;
+}

@@ -1,0 +1,142 @@
+/*root colors*/
+
+:root{
+    --mainPurple: #605BFF;
+    --navGray: #717680;
+    --borderColor: #D5D7DA;
+}
+
+@font-face {
+  font-family: 'TajawalMedium';
+  src: url('/font/Tajawal-Medium.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalExtraLight';
+  src: url('/font/Tajawal-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalLight';
+  src: url('/font/Tajawal-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalRegular';
+  src: url('/font/Tajawal-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalBold';
+  src: url('/font/Tajawal-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalExtraBold';
+  src: url('/font/Tajawal-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalBlack';
+  src: url('/font/Tajawal-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+body{
+    background-color: white;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+/* *{
+    outline: 1px solid limegreen;
+} */
+
+@media (max-width: 375px) {
+    
+.login{
+    display: none !important;
+}
+
+form{
+    width: 375px;
+    height: 559px;
+    position: relative;
+    top: 50px;
+}
+
+form .nameInfo .inputs{
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    max-width: 343px !important;
+}
+
+.nameInfo label:first-child{
+    max-width: fit-content;
+    position: relative;
+    bottom: -10px;
+}
+
+.lastName{
+    display: inline;
+    padding: 0;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    position: relative;
+    right: -110px;
+    bottom: -10px;
+}
+
+form input{
+    max-height: 44px;
+    max-width: 343px !important;
+    position: relative;
+    right: 10px;
+}
+
+form .email{
+    position: relative; 
+    top: 90px;
+}
+
+
+.ID,
+.phoneNum{
+    position: relative;
+    top: 60px;
+}
+
+form label{
+    position: relative;
+    right: 20px;
+}
+
+
+footer{
+    transform: translateY(60px);
+}
+
+.sideBar{
+    height: 550px;
+}
+}

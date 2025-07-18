@@ -1,0 +1,121 @@
+footer,
+.bePartnerThree{
+    transform: translateY(0);
+}
+
+/*root colors*/
+
+:root{
+    --mainPurple: #605BFF;
+    --navGray: #717680;
+}
+
+/*fonts*/
+
+@font-face {
+  font-family: 'TajawalMedium';
+  src: url('/font/Tajawal-Medium.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalExtraLight';
+  src: url('/font/Tajawal-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalLight';
+  src: url('/font/Tajawal-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalRegular';
+  src: url('/font/Tajawal-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalBold';
+  src: url('/font/Tajawal-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalExtraBold';
+  src: url('/font/Tajawal-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalBlack';
+  src: url('/font/Tajawal-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+#active{
+    color: var(--mainPurple);
+}
+
+/* 
+*{
+    outline: 1px solid limegreen;
+}*/
+
+.contractMain{
+    width: 100%;
+    height: 1046px;
+    box-sizing: border-box;
+    padding: 48px 100px;
+    gap: 64px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.contractHeader{
+    width: 1240px;
+    height: 36px;
+    font-family: 'TajawalBold';
+    text-align: center;
+    font-size: 30px;
+    color: var(--mainPurple);
+}
+
+.contractContent{
+    width: 790px;
+    height: 882px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    padding: 32px;
+    gap: 32px;
+    background-color: #E9EAEB;
+}
+
+.contractContent .download{
+    width: 726px;
+    height: 56px;
+    text-align: left;
+}
+
+.contractContent .contractText{
+    width: 726px;
+    height: 730px;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'TajawalRegular';
+}

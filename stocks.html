@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/font/Tajawal-Medium.ttf">
+    <link rel="stylesheet" href="/font/Tajawal-Black.ttf">
+    <link rel="stylesheet" href="/font/Tajawal-Bold.ttf">
+    <link rel="stylesheet" href="font/Tajawal-ExtraBold.ttf">
+    <link rel="stylesheet" href="font/Tajawal-ExtraLight.ttf">
+    <link rel="stylesheet" href="font/Tajawal-Light.ttf">
+    <link rel="stylesheet" href="font/Tajawal-Regular.ttf">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/main/main.css">
+    <link rel="stylesheet" href="./css/main/mainResposive.css">
+    <link rel="stylesheet" href="./css/stocks/stocks.css">
+    <link rel="stylesheet" href="./css/stocks/stocksResponsive.css">
+    <title>Stocks</title>
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+        <nav>
+            <div class="main">
+                <a href="main.html">الرئيسية</a>
+            </div>
+            <div class="stocks">
+                <a href="stocks.html"  id="active">الاسهم</a>
+            </div>
+            <div class="whoWeAre">
+                <a href="aboutUs.html">من نحن</a>
+            </div>
+            <div class="contactUs">
+                <a href="contactUs.html">تواصل معنا</a>
+            </div>
+            <div class="contract">
+                <a href="contract.html">العقد</a>
+            </div>
+            <div class="populerQuestions">
+                <a href="populerQuestions.html">الاسئلة الشائعة</a>
+            </div>
+            <div class="termsAndConditions">
+                <a href="termsAndConditions.html">الشروط و الاحكام</a>
+            </div>
+        </nav>
+        <div class="login">
+            <a href="login/login.html" class="loginButton">
+                <p>تسجيل الدخول</p>
+            </a>
+        </div>
+        <div class="navList" onclick="showNavList()">
+            <img src="/images/Frame 92.png" alt="nav list">
+        </div>
+        <div class="sideBar" id="sideBar">
+            <ul>
+                <li><a href="main.html">الرئيسية</a></li>
+                <li><a href="stocks.html" id="active">الاسهم</a></li>
+                <li><a href="aboutUs.html">من نحن</a></li>
+                <li><a href="contactUs.html">تواصل معنا</a></li>
+                <li><a href="contract.html">العقد</a></li>
+                <li><a href="termsAndConditions.html">الشروط و الاحكام</a></li>
+                <li>
+                    <a href="login/login.html" class="loginButton">
+                        <p>تسجيل الدخول</p>
+                    </a>
+                </li>
+            </ul>
+            <div class="hideBar" onclick="hideBar()">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="stocksMain">
+            <div class="stockHeader flex">
+                <div class="title flex">
+                    <p class="flex">الاسهم</p>
+                </div>
+                <div class="sub flex">
+                    <p class="flex">أشترك الأن وابدأ طريقك نحو الحرية المالية وتحقيق الأرباح</p>
+                </div>
+            </div>
+        <div class="stockContent flex">
+            <form class="flex">
+                <div class="nameInfo flex">
+                    <div class="name flex">
+                        <label>الاسم الاول</label>
+                        <div class="inputIcon">
+                            <input type="text" class="name" placeholder="ادخل الاسم الاول">
+                        </div>
+                    </div> 
+                    <div class="surname flex">
+                        <label>الاسم الاخير</label>
+                        <div class="inputIcon">
+                            <input type="text" class="surmane" placeholder="ادخل الاسم الاخير">
+                        </div>
+                    </div>   
+                </div>
+                <div class="ID flex">
+                    <label>الرقم الوطني</label>
+                    <div class="inputIcon">
+                        <input type="text" placeholder="مثال: 1266661654541">
+                    </div>
+                </div>
+                <div class="phoneNum flex">
+                    <label>رقم الهاتف</label>
+                    <div class="inputIcon">
+                        <input type="text" placeholder=" 121111111 ">
+                        <div class="selectCounty">
+                            <p class="flex"> 9+</p>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="email flex">
+                    <label>البريد الالكتروني</label>
+                    <div class="inputIcon">
+                        <input type="email" placeholder="olivia@untitledui.com">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                </div>
+                <div class="contractText flex">
+                    <div class="check">
+                        <input type="checkbox" required>
+                        <label>أقر بالإطلاع علي العقد والموافقة علي كافة البنود</label>
+                    </div>
+                    <div class="showContract flex">
+                        <a href="contract.html">عرض العقد</a>
+                    </div>
+                </div>
+            </form>
+            <div class="subsucribe">
+                <p>اشتراك</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="bePartnerThree">
+        <img src="/images/Line pattern.png" alt="line pattern" class="linePattern">
+            <div class="callToAction">
+                <div class="callToActionContent">
+                    <div class="callToActionHeader">
+                        <p>استثمر اليوم... وكن شريكًا في نجاح الغد</p>
+                    </div>
+                    <div class="callToActionSub">
+                        <p>طريقك نحو الحرية المالية يبدأ من هنا!</p>
+                    </div>
+                </div>
+                <div class="startInvesting">
+                    <a href="stocks.html"> ابدا بالاستثمار الان</a>
+                </div>
+            </div>
+
+            <img src="/images/Line pattern.png" alt="line pattern" class="linePattern">
+
+        </div>
+
+        <footer>
+            <div class="footerContent">
+                <div class="abuElzet">
+                    <p class="abuElzetTitle">أبو الزيت</p>
+                    <p class="abuElzetSub">فرصة حقيقية لامتلاك حصة من نمو شركتنا. تابع أرباحك، وراقب أموالك وهي تنمو بثقة.</p>
+                    <div class="startInvesting">
+                            <p> ابدا بالاستثمار الان</p>
+                    </div>
+                </div>
+                <div class="footerLinks">
+                    <p class="linksTitle">روابط سريعة</p>
+                    <div class="links">
+                        <p class="link">الرئيسية</p>
+                        <p class="link">الاسهم</p>
+                        <p class="link">العقد</p>
+                        <p class="link">اتفاقية المستخدم</p>
+                    </div>
+                </div>
+                <div class="whoWeAreLinks">
+                    <p class="whoWeAreTitle">من نحن</p>
+                    <div class="links">
+                        <p class="link">من نحن</p>
+                        <p class="link">تواصل معنا</p>
+                    </div>
+                </div>
+                <div class="followUs">
+                    <p>تابعنا</p>
+                    <div class="followUsOn">
+                        <div class="appIcon">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                        <div class="appIcon">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="appIcon">
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rights">
+                <p>جميع الحقوق محفوظة ©  2025 أبو الزيت</p>
+                <div class="followUsOn">
+                    <div class="appIcon">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div class="appIcon">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="appIcon">
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

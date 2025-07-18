@@ -1,0 +1,326 @@
+footer,
+.bePartnerThree{
+    margin-top: 0;
+    transform: translateY(0);
+}
+
+/*root colors*/
+
+:root{
+    --mainPurple: #605BFF;
+    --navGray: #717680;
+}
+
+/*fonts*/
+
+#active{
+    color: var(--mainPurple);
+}
+
+@font-face {
+  font-family: 'TajawalMedium';
+  src: url('/font/Tajawal-Medium.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalExtraLight';
+  src: url('/font/Tajawal-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalLight';
+  src: url('/font/Tajawal-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalRegular';
+  src: url('/font/Tajawal-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalBold';
+  src: url('/font/Tajawal-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalExtraBold';
+  src: url('/font/Tajawal-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalBlack';
+  src: url('/font/Tajawal-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+/* 
+*{
+    outline: 1px solid limegreen;
+}*/
+
+.ContactUsMain{
+    width: 100%;
+    height: 888px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    box-sizing: border-box;
+    padding: 80px 100px;
+    z-index: 5;
+    background-color: white;
+}
+
+.ContactUsHeader{
+    width: 1240px;
+    height: 60px;
+    gap: 24px;
+}
+
+.ContactUsHeader .title,
+.title p{
+    width: inherit;
+    height: 19px;
+    font-size: 30px;
+    font-family: 'TajawalBold';
+    line-height: 36px;
+    color: var(--mainPurple);
+    align-items: center;
+    justify-content: center;
+}
+
+
+.ContactUsHeader .sub,
+.sub p{
+    width: inherit;
+    height: 15px;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-family: 'TajawalRegular';
+    color: #252B37;
+}
+
+.ContectUsContent{
+    width: 632px;
+    height: 620px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    padding: 40px 24px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 54;
+    box-shadow: 0 4px 24px -6px rgba(10, 13, 18, 0.31);
+}
+
+form{
+    width: 583px;
+    height: 452px;
+    gap: 32px;
+    box-shadow: 0 4px 6px -2px #0A0D1208;
+}
+
+.nameInfo{
+    width: inherit;
+    height: 64px;
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+    gap: 32px;
+}
+
+.nameInfo .name,
+.surname{
+    width: 270px !important;
+    height: inherit;
+    gap: 10px;
+}
+
+label{
+    font-size: 16px;
+    font-family: 'TajawalBold';
+}
+
+.name input,
+.surname input{
+    width: 275px;
+    height: 44px !important;
+    box-sizing: border-box;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #D5D7DA;
+}
+
+input::placeholder{
+    width: 263px;
+    height: 30px;
+    font-size: 16px;
+    font-family: 'TajawalLight';
+    line-height: 22px;
+    color: #717680;
+}
+
+
+.phoneNum,
+.massageSubject{
+    width: 584px;
+    height: 70px;
+    border-radius: 8px;
+}
+
+.phoneNum input{
+    width: 85%;
+    position: relative;
+    right: 0px;
+}
+
+
+
+.selectCounty{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    width: 67px;
+    height: 44px;
+    position: relative;
+    left: -15px;
+}
+
+
+.phoneNum input,
+.massageSubject input{
+    height: 44px;
+    border: none;
+    border-radius: 8px;
+}
+
+.massageSubject input{
+    width: 90%;
+}
+
+.massageSubject i{
+    position: relative;
+    left: -20px;
+}
+
+.phoneNum input::placeholder,
+.massageSubject input::placeholder{
+    font-size: 16px;
+    color: #717680;
+    font-family: 'TajawalRegular';
+    letter-spacing: 1px;
+    padding: 5px;
+    width: 526px !important;
+}
+
+
+.phoneNum input::placeholder{
+    direction: ltr;
+    text-align: left;
+    position: relative;
+    left: 30px;
+}
+
+.inputIcon{
+    display: flex;  
+    align-items: center;
+    border: 1px solid #D5D7DA;
+    border-radius: 8px;
+}
+
+
+.inputIcon p{
+    width: 26px;
+    height: 30px;
+    font-size: 20px;
+    font-family: 'TajawalRegular';
+    line-height: 16px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 10px;
+}
+
+.inputIcon i{
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+    color: #717680;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputIcon i:hover{
+    cursor: pointer;
+}
+
+.massageSubject{
+    width: 584px;
+    height: 138px !important;
+}
+
+.massage textarea{
+    width: 584px;
+    height: 138px !important;
+    border: 1px solid #D5D7DA;
+    border-radius: 16px;
+}
+
+textarea::placeholder{
+    height: 110px;
+    width: 556px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'TajawalLight';
+}
+
+.send{
+    width: 584px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 24px 16px;
+    position: relative;
+    top: 30px;
+    background-color: var(--mainPurple);
+    color: white;
+}
+
+.send:hover{
+    cursor: pointer;
+}
+
+.send p{
+    width: 114px;
+    height: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-family: 'TajawalBold';
+}

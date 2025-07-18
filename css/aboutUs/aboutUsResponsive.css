@@ -1,0 +1,193 @@
+/*root colors*/
+
+:root{
+  --mainPurple: #605BFF;
+  --navGray: #717680;
+}
+
+/*fonts*/
+
+@font-face {
+  font-family: 'TajawalMedium';
+  src: url('/font/Tajawal-Medium.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalExtraLight';
+  src: url('/font/Tajawal-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalLight';
+  src: url('/font/Tajawal-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalRegular';
+  src: url('/font/Tajawal-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalBold';
+  src: url('/font/Tajawal-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalExtraBold';
+  src: url('/font/Tajawal-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalBlack';
+  src: url('/font/Tajawal-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+*{
+  /* outline: 1px solid  limegreen; */
+}
+
+@media (max-width: 375px) {
+  
+header{
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 30px;
+}
+
+.profile{
+  display: none;
+}
+
+.aboutUsMain{
+  max-width: 375px !important;
+  height: 2450px !important;
+  gap: 48px;
+}
+
+.aboutUsHeader{
+  width: 343px;
+  height: 11px;
+  gap: 16px;
+  position: relative;
+  right: -100px;
+  bottom: 30px;
+}
+
+.aboutUsInfo{
+  width: 343px;
+  height: 540px;
+  position: relative;
+  right: -100px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column !important;
+}
+
+.aboutUsInfo div{
+  height: 147px;
+  width: 343px;
+  border-radius: 16px;
+  box-sizing: border-box;
+  padding: 46px 24px !important;
+  display: flex;
+  flex-direction: column;
+  gap: 3px !important;
+}
+
+.aboutUsInfo div p{
+  height: 89px !important;
+  width: 295px !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  display: flex;
+  align-items: center;
+}
+
+.aboutUsInfo div p:first-child{
+  position: relative;
+  top: 10px;
+}
+
+.aboutUsInfo div p:last-child{
+  position: relative;
+  top: -10px;
+}
+
+
+.aboutUsInfo div .title {
+  align-items: start;
+}
+
+.team{
+  width: 343px;
+  height: 847px;
+  gap: 32px;
+  position: relative;
+  right: -100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.team .title,
+.outClientSays .title{
+  width: 343px;
+  height: 10px;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--mainPurple);
+}
+
+.team .personals{
+  width: 343px;
+  height: 805px;
+  gap: 40px;
+  display: flex;
+  flex-direction: column !important;
+  align-items: center;
+}
+
+.outClientSays{
+  width: 343px;
+  height: 800px;
+  position: relative;
+  right: -100px;
+}
+
+.clients{
+  width: 343px;
+  height: 800px;
+  flex-direction: column;
+}
+
+.client{
+  width: 343px;
+  height: 226px;
+  border: 12px;
+  border: 1px solid #E9EAEB;
+  box-sizing: border-box;
+  padding: 24px;
+}
+
+.client p{
+  width: 289;
+  line-height: 18px !important;
+}
+
+}

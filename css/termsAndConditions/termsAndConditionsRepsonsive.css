@@ -1,0 +1,119 @@
+footer,
+.bePartnerThree{
+    transform: translateY(0);
+}
+
+/*root colors*/
+
+:root{
+    --mainPurple: #605BFF;
+    --navGray: #717680;
+}
+
+/*fonts*/
+
+@font-face {
+  font-family: 'TajawalMedium';
+  src: url('/font/Tajawal-Medium.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalExtraLight';
+  src: url('/font/Tajawal-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalLight';
+  src: url('/font/Tajawal-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalRegular';
+  src: url('/font/Tajawal-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalBold';
+  src: url('/font/Tajawal-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalExtraBold';
+  src: url('/font/Tajawal-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalBlack';
+  src: url('/font/Tajawal-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* *{
+    outline: 1px solid limegreen;
+} */
+
+@media (max-width:375px) {
+    .contractMain{
+        width: 375px !important;
+        height: 974px;
+        padding: 48px 16px;
+        gap: 40px;
+    }
+    .contractMain .contractHeader,
+    .contractHeader p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 343px !important;
+        height: 11px !important;
+        font-size: 18px !important;
+    }
+
+    .contractContent{
+        width: 343px;
+        height: 760px !important;
+    }
+
+    .contractText{
+        width: 333px !important;
+        height: 845px !important;
+        border-radius: 16px;
+        gap: 32px;
+        position: relative;
+        right: -28px;
+    }
+
+    .download{
+        display: none;
+    }
+
+    .contractText p{
+        width: 333px !important;
+        font-size: 16px;
+        line-height: 22px;
+        display: flex;
+        gap: 32px;
+        box-sizing: border-box;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .resposiveNone{
+        border: 1px solid red;
+        display: none !important;
+    }
+}

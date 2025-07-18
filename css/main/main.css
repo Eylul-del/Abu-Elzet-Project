@@ -1,0 +1,1255 @@
+/*root colors*/
+
+:root{
+    --mainPurple: #605BFF;
+    --navGray: #717680;
+}
+
+/*fonts*/
+
+@font-face {
+  font-family: 'TajawalMedium';
+  src: url('/font/Tajawal-Medium.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalExtraLight';
+  src: url('/font/Tajawal-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalLight';
+  src: url('/font/Tajawal-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalRegular';
+  src: url('/font/Tajawal-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalBold';
+  src: url('/font/Tajawal-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalExtraBold';
+  src: url('/font/Tajawal-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalBlack';
+  src: url('/font/Tajawal-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* 
+I use outline so I can see the actual volume of each container with padding or with other features
+*{
+    outline: 1px solid limegreen; 
+} */
+
+/*setting the main font-family, direction */
+body {
+    direction: rtl;
+    font-family: 'TajawalMedium';
+    margin: 0;
+    background-color: #CECECE;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/*the container that holding all the content without the header and footer*/
+.all{
+    margin: 0 auto;
+    max-height: 3596px;
+}
+
+
+/*header settings (width-height, display...)*/
+/*
+ Its common in all pages so i will take this file 
+link and connect it with other pages instead of writing the code again 
+*/
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 81px;
+    margin: 0 auto;
+    background-color: white;
+    z-index: 10;
+    box-shadow: 1px 2px 18px 0px rgba(0, 0, 0, 0.102);
+}
+
+/*header logo, its empty; it could be an image instead of it*/
+header .logo{
+    height: 52px;
+    width: 82px;
+    border-radius: 12px;
+    background-color: var(--mainPurple);
+}
+
+
+/*the nav bar, it holds the links to other pages, it could be made with js-react but i wanted to make it just with html-css */
+header nav{
+    display: flex;
+    gap: 32px;
+    font-size: 16px;
+    font-weight: 400px;
+    letter-spacing: 0%;
+    color: var(--navGray);
+}
+
+/*nav links color and decorations*/
+nav a{
+    text-decoration: none;
+    color: var(--navGray);
+}
+
+
+/*special color for the active page*/
+#active a{
+    color: #605BFF;
+}
+
+
+/*login button*/
+header .loginButton{
+    background-color: var(--mainPurple);
+    width: 150px;
+    height: 44px;
+    border-radius: 8px;
+    font-weight: 700px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0px 4px 15px -3px rgba(0, 0, 0, 0.25);
+}
+
+.navList,
+.sideBar{
+    display: none;
+}
+
+/**/
+main{
+    height: 759px;
+    width: 100%;
+    background-color: white;
+    margin: 0 auto;
+    z-index: 4;
+}
+
+
+/*investing card in main secion*/
+main .investors{
+    width: 386px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+    gap: 24px;
+    position: relative;
+    right:600px;
+    top: 0px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -8px;
+    border: 1px solid rgb(239, 239, 239);
+}
+
+
+/*the word beside the 5000 number*/
+.investor{
+    font-size: 14px;
+    font-family: 'TajawalLight';
+    width: 46px;
+    height: 9px;
+}
+
+
+/*it holds all the enformations . its not holding the grapg img*/
+.invetsorInfo{
+    height: 73px;
+    width: 194px;
+}
+
+.investorHeading{
+    height: 11px;
+    width: 194px;
+    font-size: 18px;
+    margin-top: -20px;
+    font-family: 'TajawalBold';
+}
+
+/*for (20%) and the arrow icon*/
+.inverstorChange{
+    width: 194px;
+    height: 38px;
+    gap: 16px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.trendUpNum{
+    width: 24px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inverstorNumbers{
+    width: 125px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+
+/*for 5000 number in the card*/
+.number{
+    width: 75px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-size: 30px;
+    letter-spacing: 0%;
+    font-family: 'TajawalBold';
+}
+
+
+.trendUp{
+    display: flex;
+    align-items: center;
+    color: #12B76A;
+    height: 23px;
+    width: 44px;
+    position: relative;
+    gap: 4px;
+}
+
+
+/*for the arrow icon in the card*/
+.trendUp .trendUpIcon{
+    height: 16px;
+    width: 16px;
+}
+
+/*container to hold the graph img in card*/
+.chartData{
+    height: 74.87px;
+    width: 120px;
+}
+
+/*the graph img*/
+.chartData img{
+    height: 74px;
+    width: 120px;
+}
+
+
+/*stock card in main section*/
+.stockCard{
+    width: 388px;
+    height: 136px;
+    padding: 24px;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 800px;
+    top: 310px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    transform: rotate(3.26deg);
+    box-shadow: 0 4px 6px -6px;
+}
+
+.stockHeader{
+    width: 340px;
+    height: 24px;
+    font-family: 'TajawalBold';
+    font-size: 18px;
+    letter-spacing: 0%;
+    line-height: 18px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.stockPricingContent{
+    display: flex;
+    justify-content: space-between;
+    width: 340px;
+    height: 80px;
+}
+
+.stockChart{
+    width: 128px;
+    height: 64px;
+}
+
+.stockInfo{
+    width: 196px;
+    height: 80px;
+    gap: 16px;
+}
+
+
+/*100$ number*/
+.stockInfo .stockPrice {
+    font-family: 'TajawalBold';
+    color: #414651;
+    font-size: 36px;
+    line-height: 44px;
+    width: 196px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.stockChanges {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 15px;
+    width: 196px;
+    height: 20px;
+    gap: 8px;
+}
+
+.stockSubtitle{
+    display: flex;
+    align-items: center;
+    width: 127px;
+    height: 9px;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'TajawalLight';    
+}
+
+.stockChangeUp{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    width: 50px;
+    height: 20px;
+    color: #12B76A;
+}
+
+.trendUpNum{
+    width: 30px;
+    height: 20px;
+    font-family: 'TajawalBold';
+    font-size: 14px;
+}
+
+.trenUpIcon{
+    height: 16px;
+    width: 16px;
+}
+
+/*the content int main section (main header- start investing button)*/
+.mainHero{
+    width: 1240px;
+    height: 647px;
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    top: -300px;
+    justify-content: space-between;
+}
+
+.heroContent{
+    width: 604px;
+    height: 647px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 48px;
+}
+
+
+/*text place(without button)*/
+.heroText{
+    width: 604px;
+    height: 272px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    justify-content: space-between;
+}
+
+
+/*main header*/
+.headLine{
+    width: 604px;
+    height: 96px;
+    font-family: 'TajawalBold';
+    font-size: 48px;
+    color: var(--mainPurple);
+    display: flex;
+    align-items: center;
+    line-height: 45px;
+    letter-spacing: 0;
+    word-spacing: -5px;
+}
+
+.subTextBold{
+    width: 604px;
+    height: 55px;
+    font-family: 'TajawalBold';
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.subTextLight{
+    height: 65px;
+    width: 604px;
+    font-family: 'TajawalLight';
+    font-size: 21px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+
+/*main image*/
+.heroImg{
+    width: 520px;
+    height: 414px;
+    position: relative;
+    top: 0px;
+}
+
+/*main investing button*/
+.startInvesting{
+    height: 56px;
+    width: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 12px;
+    padding: 5px 12px;
+    border-radius: 8px;
+    background-color: var(--mainPurple);
+    box-shadow: 0 25px 50px -12;
+    font-size: 18px;
+    font-family: 'TajawalBold';
+    letter-spacing: 0;
+}
+
+
+#startInvesting a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+
+/*our product section*/
+.ourProducts{
+    height: 367;
+    width: 100%;
+    padding: 0 100px;
+    box-sizing: border-box;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 0 auto;
+
+}
+
+.products{
+    height: 267px;
+    width: 1240px;
+    padding: 96px 0;
+}
+
+
+/*title of products*/
+.productHead{
+    text-align: center;
+    color: var(--mainPurple);
+    font-family: 'TajawalBold';
+    font-size: 30px;
+}
+
+.productsImages{
+    width: 1176px;
+    height: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+/*i put eath two images with eath other so i can control it easly while setting the responsive dising*/
+.productsImages .productImagesColumnTwo{
+    direction: ltr;
+}
+
+.productsImages div{
+    display: flex;
+    gap: 60px;
+}
+
+
+/*products image*/
+.productsImages .StrongLogo{
+    height: 96px;
+    width: 389px;
+}
+
+.productsImages .mainLogo{
+    height: 96px;
+    width: 98px;
+}
+
+.productsImages .routeLogo{
+    width: 341px;
+    height: 96px;
+}
+
+/*a section for Invitation to be partner and start investing*/
+.bePartner{
+    width: 100%;
+    height: 302px;
+    background-color: var(--mainPurple);
+    position: relative;
+    margin: -15px auto 60px;
+    overflow: hidden;
+}
+
+.bePartner .bePartnerBackImg{
+    position: absolute;
+    width: 512px;
+    height: 512px;
+    left: -272.64px;
+    top: 0px;
+}
+
+.bePartnerBackImg .ellipse21{
+    width: 512px;
+    height: 512px;
+    position: relative;
+    left: 80px;
+    top: -40px;
+}
+
+.bePartnerBackImg .ellipse20{
+    height: 391px;
+    width: 391px;
+    position: absolute;
+    left: 120px;
+    top: 15px;
+}
+
+.bePartner .callToAction{
+    width: 1240px;
+    height: 157px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.bePartner .callToActionContent{
+    width: 1240px;
+    height: 58px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    position: relative;
+    top: 30px;
+    margin: 30px auto;
+    color: white;
+}
+
+.callToActionContent .callToActionHeader{
+    width: 1240px;
+    height: 19px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.callToActionHeader p{
+    font-size: 30px;
+    font-family: 'TajawalBold';
+    width: 1240px;
+    height: 19px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.callToActionSub{
+    width: 1240px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.callToActionSub p{
+    height: 15px;
+    width: 1240px;
+    font-size: 24px;
+    font-family: 'TajawalBold';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.callToAction .startInvesting{
+    width: 253px;
+    height: 67px;
+    padding: 0;
+    font-size: 24px;
+    font-family: 'TajawalBold';
+    color: var(--mainPurple);
+    background-color: white;
+}
+
+.callToAction .startInvesting a{
+    padding: 10px;
+    font-size: 12px;
+    color: var(--mainPurple);
+    text-decoration: none;
+}
+
+
+/*Why Us setion*/
+.whyUs{
+    width: 100%;
+    height: 856px;
+    direction: ltr;
+    box-sizing: border-box;
+    padding: 80px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin: -60px auto;
+    background-color: white;
+}
+
+.whyUsHeader{
+    width: 1240px;
+    height: 123px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+}
+
+.whyUsHeader p{
+    margin-top: -30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whyUsTitle{
+    width: 1240px;
+    height: 19px;
+    font-size: 30px;
+    font-family: 'TajawalBold';
+    color: var(--mainPurple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whyUsHeader .boldSub{
+    width: 1240px;
+    height: 15px;
+    font-size: 24px;
+    line-height: 100%;
+    font-family: 'TajawalBold';
+    color: #252B37;
+}
+
+.whyUsHeader .lightSub{
+    width: 956px;
+    height: 39px;
+    font-size: 21px;
+    font-family: 'TajawalLight';
+    line-height: 26px;
+    text-align: center;
+}
+
+.whyUsContent{
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages{
+    height: 394px;
+    width: 691px;
+    gap: 32px;
+    direction: rtl;
+}
+
+.whyUsContent .advantages .advantagTitle{
+    width: 691px;
+    height: 19px;
+    font-size: 30px;
+    font-family: 'TajawalBold';
+    display: flex;
+    align-items: center;
+}
+
+.advantagSub{
+    width: 691px;
+    height: 39px;
+    font-size: 21px;
+    line-height: 26px;
+    font-family: 'TajawalLight';
+    display: flex;
+    align-items: center;
+}
+
+.advantagesContent{
+    width: 691px;
+    height: 292px;
+    box-sizing: border-box;
+    padding: 0 0 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.listItem {
+    width: 675px;
+    height: 28px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 12px;
+}
+
+.listItem .check{
+    height: 28px;
+    width: 28px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DFDEFF;
+}
+
+.check i{
+    height: 12.26px;
+    width: 14px;
+    color: #4D49D6;
+}
+
+.listItem p{
+    width: 635px;
+    height: 10px;
+    font-size: 16px;
+    font-family: 'TajawalLight';
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+}
+
+.happyClients{
+    width: 486px;
+    height: 525px;
+    border-radius: 12px;
+    direction: ltr;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.happyClients div{
+    width: 219px;
+    height: 175px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    position: relative;
+    box-shadow: 0 10px 15px -7px #605BFF;
+    background-color: var(--mainPurple);
+    color: white;
+}
+
+.happyClients div p:first-child{
+    width: 155px;
+    height: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 18px;
+    margin-bottom: -60px;
+    font-family: 'TajawalBold';
+}
+
+.happyClients div p:last-child{
+    width: 155px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: -2px;
+    margin-bottom: 0px;
+}
+
+.succsessfulPartner{
+    height: 175px;
+    width: 274px !important;
+    bottom: -172px;
+    left: -5px;
+}
+
+.returnOnInvestment{
+    bottom: -83px;
+}
+
+.bePartnerTwo{
+    width: 100%;
+    height: 302px;
+    background-color: var(--mainPurple);
+    margin: 45px auto 0;
+}
+
+.bePartnerTwo .callToAction{
+    width: 1240px;
+    height: 157px;
+    position: relative;
+    top: 72px;
+    right: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: right;
+    gap: 32px;
+    color: white;
+}
+
+.bePartnerTwo .callToAction .callToActionContent{
+    width: 1240px;
+    height: 58px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.bePartnerTwo .callToAction .callToActionContent .callToActionHeader p{
+    width: inherit;
+    height: 19px;
+    font-size: 30px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.bePartnerTwo .callToAction .callToActionContent .callToActionSub p{
+    width: inherit;
+    height: 15px;
+    font-size: 24px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+
+/*this image will show up in responsive version*/
+.bePartnerMobileImage{
+    display: none;
+}
+
+
+/*image in the secone bePartner section*/
+.bePartnerTwoBackBigImage,
+.bePartnerTwoBackSmallImage{
+    float: left;
+    position: relative;
+}
+
+.bePartnerTwoBackBigImage{
+    position: relative;
+    top: -160px;
+    width: 389.65px;
+    height: 389.65px;
+}
+
+.bePartnerTwoBackBigImage img{
+    position: absolute;
+    left: 0px;
+}
+
+.bePartnerTwoBackBigImage .front{
+    position: absolute;
+    bottom: 100px;
+    left: 25px;
+    top: 29px;
+    width: 288.86px;
+    height: 288.86px;
+}
+
+.bePartnerTwoBackSmallImage{
+    width: 222.25px;
+    height: 222.25px;
+    left: -43px;
+    bottom: -8px;
+}
+
+.bePartnerTwoBackSmallImage .front{
+    position: absolute;
+    top: 28px;
+    left: 30px;
+    width: 164.76px;
+    height: 164.76px;
+}
+
+
+.ourStocks{
+    width: 100%;
+    height: 708px;
+    box-sizing: border-box;
+    padding: 80px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    background-color: white;
+    transform: translateY(-250px);
+    margin: 0 auto;
+}
+
+.ourStocksHeader{
+    width: 1240px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+
+}
+
+.ourStockHeader .title{
+    width: inherit;
+    height: 19px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'TajawalBold';
+    color: var(--mainPurple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ourStockHeader .stockHeaderSub{
+    width: inherit;
+    height: 15px;
+    font-size: 24px;
+    line-height: 100%;
+    font-family: 'TajawalBold';
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #252B37;
+}
+
+.ourStockContent{
+    width: 1240px;
+    height: 440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.ourStockContent .stockContentGraph{
+    width: 570px;
+    height: 343px;
+}
+
+
+/*this img for responsive version*/
+.stockContentGraph .graphMobile{
+    display: none;
+}
+
+.ourStockContent .statsText{
+    width: 586px;
+    height: 342px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    gap: 30px;
+}
+
+.statsText .statsTitle{
+    width: 586px;
+    height: 30px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.statsText .statsTitle .num{
+    font-size: 48px;
+    color: var(--mainPurple);
+}
+
+.statsTitle .percant{
+    color: var(--mainPurple);
+}
+
+.statsList{
+    width: 586px;
+    height: 280px;
+    padding-right: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+
+/*third bePartner section*/
+.bePartnerThree{
+    width: 100%;
+    height: 302px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--mainPurple);
+    position: relative;
+    margin: 0 auto;
+    transform: translateY(-250px);
+}
+
+.bePartnerThree img{
+    width: 140px;
+    height: 140px;
+}
+
+.bePartnerThree .linePattern:first-child{
+    position: absolute;
+    bottom: 0;
+}
+
+.linePattern:last-child{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.bePartnerThree .callToAction{
+    width: 1240px;
+    height: 157px;
+    position: relative;
+    right: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.bePartnerThree .callToAction .callToActionContent{
+    width: inherit;
+    height: 58px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    color: white;
+}
+
+
+/*
+footer, its common in all pages so i will take this file 
+link and connect it with other pages instead of writing the code again 
+*/
+footer{
+    width: 100%;
+    height: 375px;
+    box-sizing: border-box;
+    padding: 48px 120px;
+    background-color: #15125B;
+    margin: 0 auto;
+    transform: translateY(-250px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.footerContent{
+    display: flex;
+    width: 1220px;
+    height: 255px;
+    display: flex;
+    gap: 64px;
+}
+
+.abuElzet{
+    width: 288.49px;
+    height: 156px;
+}
+
+.abuElzetTitle{
+    width: inherit;
+    height: 28px;
+    font-size: 18px;
+    font-family: 'TajawalBold';
+}
+
+.abuElzetSub{
+    width: inherit;
+    height: 32px;
+    font-size: 16px;
+    font-family: 'TajawalLight';
+}
+
+.abuElzet .startInvesting{
+    width: 158px;
+    height: 48px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 16px;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.abuElzet .startInvesting p{
+    font-size: 15px !important;
+    line-height: 24px;
+    color: var(--mainPurple);
+}
+
+.footerLinks{
+    width: 220px;
+    height: 144px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.linksTitle{
+    width: inherit;
+    height: 28px;
+    font-size: 18px;
+    font-family: 'TajawalBold';
+    margin: 0;
+}
+
+.links{
+    width: 220px;
+    height: 100px;
+
+}
+
+.link{
+    width: fit-content;
+    height: 10px;
+    font-family: 'TajawalLight';
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin: 15px 10px;
+}
+
+.whoWeAreLinks{
+    width: 220px;
+    height: 84px;
+}
+
+.whoWeAreTitle{
+    width: inherit;
+    height: 28px;
+    margin: 0;
+    font-size: 18px;
+    font-family: 'TajawalBold';
+    line-height: 28px;
+    
+}
+
+.whoWeAreLinks .links{
+    height: 48px;
+}
+
+.followUs{
+    width: 208px;
+    height: 84px;
+}
+
+.followUsTitle{
+    width: inherit;
+    height: 28px;
+    font-family: 'TajawalBold';
+    font-size: 18px;
+}
+
+.followUsOn{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.appIcon{
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2c2a6b;
+    color: white;
+    border-radius: 50%;
+}
+
+.rights{
+    border-top: 1px solid white;
+    text-align: center;
+}
+
+.rights .followUsOn{
+    display: none;
+}

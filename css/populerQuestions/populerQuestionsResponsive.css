@@ -1,0 +1,192 @@
+/*root colors*/
+
+:root{
+    --mainPurple: #605BFF;
+    --navGray: #717680;
+}
+
+/*fonts*/
+
+@font-face {
+  font-family: 'TajawalMedium';
+  src: url('/font/Tajawal-Medium.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalExtraLight';
+  src: url('/font/Tajawal-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalLight';
+  src: url('/font/Tajawal-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalRegular';
+  src: url('/font/Tajawal-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalBold';
+  src: url('/font/Tajawal-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalExtraBold';
+  src: url('/font/Tajawal-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalBlack';
+  src: url('/font/Tajawal-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* 
+I use outline so I can see the actual volume of each container with padding or with other features*/
+/* *{
+    outline: 1px solid limegreen; 
+} */
+
+
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+#active{
+    color: var(--mainPurple);
+}
+
+@media (max-width: 375px) {
+    
+
+footer,
+.bePartnerThree{
+    transform: translateY(300px);
+}
+
+.populerCuestions{
+    width: 375px;
+    height: 750px !important;
+    background: white;
+}
+
+.questionHeader{
+    width: 343px !important;
+    height: 11px;
+    font-size: 18px;
+}
+
+.questionContent{
+    width: 343px !important;
+    height: 451px;
+    gap: 40px;
+}
+
+.questionContent p,
+.questionContent div{
+    width: 343px !important;
+}
+
+.question{
+    position: relative;
+    top: 30px;
+}
+
+.question p{
+    font-size: 16px !important;
+    font-family: 'TajawalRegular';
+}
+
+.questionContent .qOne{
+    width: 343px !important;
+    height: 250px !important;
+    box-sizing: border-box;
+    padding: 24px 12px 24px 0px;
+    gap: 12px;
+}
+
+.qOne div,
+.qOne p{
+    display: flex;
+    align-items: center;
+    width: 323px !important;
+}
+
+.otherQuesContainer{
+    width: 375px;
+    height: 450px  !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 70px 40px;
+    background-color: white !important;
+    position: relative;
+    top: 70px;
+}
+
+.otherQuestions{
+    width: 343px;
+    height: 230px;
+    border-radius: 20px;
+    gap: 32px;
+}
+
+.otherQuestions p,
+.otherQuestions .yourQuestions{
+    width: 311px !important;
+}
+
+.otherQuestions .profileImages,
+.profileImages img{
+    position: relative;
+    top: 9px;
+    width: 95px !important;
+    height: 47px !important;
+}
+
+.otherQuestions .yourQuestions{
+    width: 311px !important;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+}
+.yourQuestions p:first-child{
+    font-size: 16px;
+    width: 311px !important;
+    height: 10px;
+    position: relative;
+    top: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.yourQuestions p:last-child{
+    font-size: 14px;
+    height: 9px;
+    width: 311px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}

@@ -1,0 +1,279 @@
+/*root colors*/
+
+:root{
+    --mainPurple: #605BFF;
+    --navGray: #717680;
+}
+
+/*fonts*/
+
+@font-face {
+  font-family: 'TajawalMedium';
+  src: url('/font/Tajawal-Medium.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalExtraLight';
+  src: url('/font/Tajawal-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalLight';
+  src: url('/font/Tajawal-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalRegular';
+  src: url('/font/Tajawal-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalBold';
+  src: url('/font/Tajawal-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalExtraBold';
+  src: url('/font/Tajawal-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalBlack';
+  src: url('/font/Tajawal-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* 
+I use outline so I can see the actual volume of each container with padding or with other features*/
+/* *{
+    outline: 1px solid limegreen; 
+} */
+
+
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* footer,
+.bePartnerThree{
+    margin-top: 0;
+    transform: translateY(0);
+} */
+
+/*root colors*/
+
+:root{
+    --mainPurple: #605BFF;
+    --navGray: #717680;
+}
+
+/*fonts*/
+
+@font-face {
+  font-family: 'TajawalMedium';
+  src: url('/font/Tajawal-Medium.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalExtraLight';
+  src: url('/font/Tajawal-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalLight';
+  src: url('/font/Tajawal-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalRegular';
+  src: url('/font/Tajawal-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalBold';
+  src: url('/font/Tajawal-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalExtraBold';
+  src: url('/font/Tajawal-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalBlack';
+  src: url('/font/Tajawal-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+*{
+     outline: 1px solid limegreen; 
+}*/
+
+@media (max-width: 375px) {
+    
+.stocksMain{
+    width: 375px;
+    position: relative;
+    height: 881px;
+}
+
+.stocksMain .stockHeader{
+    width: 343px !important;
+    height: 36px;
+    gap: 16px;
+    position: relative;
+    right: -80px;
+    bottom: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.stockHeader .title p{
+    width: 343px;
+    height: 11px;
+    font-size: 18px;
+}
+
+
+.sub,
+.sub p{
+    width: 343px;
+    height: 9px;
+    font-size: 15px;
+    font-family: 'TajawalLight';
+}
+
+.stockContent{
+    width: 343px;
+    height: 601px;
+    box-sizing: border-box;
+    padding: 0 24px;
+    position: relative;
+    right: -80px;
+    border-radius: 16px;
+    box-shadow: none;
+}
+
+.stockContent form{
+    box-sizing: border-box;
+    width: 343px;
+    height: 513px;
+    position: relative;
+    top: -60px;
+}
+
+.name,
+.surname,
+.phoneNum,
+.email,
+.ID{
+    width: 343px !important;
+    height: 84px;
+    margin-top: 0px;
+}
+
+.nameInfo{
+    flex-direction: column !important;
+    width: 343px;
+    height: 200px !important;
+    position: relative;
+    bottom: 30px;
+}
+
+.name input,
+.surname input{
+    min-width: 343px !important;
+    height: 44px;
+    padding: 10px 14px;
+}
+
+.name input{
+  position: relative;
+  right: 70px;
+}
+
+.phoneNum .inputIcon input{
+    width: 267px;
+    height: 44px;
+    box-sizing: border-box;
+    padding: 10px 14px;
+}
+
+.ID{
+    position: relative;
+    bottom: 30px;
+}
+
+.phoneNum{
+    position: relative;
+    bottom: 30px;
+}
+
+.email{
+    position: relative;
+    bottom: 30px;
+}
+
+.email input{
+    width: 300px;
+}
+
+.contractText{
+    flex-direction: column !important;
+    gap: 10px;
+    position: relative;
+    top: 10px;
+}
+
+.contractText .check label{
+    font-family: 'TajawalRegular';
+    font-size: 15px !important;
+}
+
+.contractText a{
+    font-size: 14px;
+}
+
+
+.subsucribe{
+    width: 343px;
+    height: 48px;
+    position: relative;
+    top: 75px;
+}
+
+}

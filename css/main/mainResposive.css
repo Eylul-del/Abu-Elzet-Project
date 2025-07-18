@@ -1,0 +1,1083 @@
+/**{
+     outline:  1px solid limegreen;
+}
+ */
+
+
+@media (max-width: 375px) {
+    
+
+    header{
+        max-width: 375px;
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding: 0 10px;
+    }
+    header nav{
+        display: none;
+    }
+
+    header .login{
+        display: none;
+    }
+
+    .navList,
+    .sideBar{
+        display: inline;
+    }
+
+    .hideBar{
+        position: relative;
+        top: 20px;
+        left: 50px;
+        color: rgb(50, 50, 50);
+    }
+
+    .sideBar .hideBar i{
+        font-size: 24px;
+    }
+
+    body.sidebarOpen{
+        overflow: hidden;
+    }
+
+    .sideBar {
+        position: fixed;
+        top: 0;
+        left: -100%; /* Hide off screen */
+        width: 343px;
+        height: 100vh;
+        background-color: #fff;
+        box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+        transition: left 0.3s ease, opacity 0.3s ease;
+        z-index: 99999;
+        padding: 10px;
+        display: flex !important;
+        justify-content: space-around;
+        opacity: 0;
+       pointer-events: none; /* Prevent interaction while hidden */
+    }
+
+    .sideBar.active {
+        left: 0;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .sideBar ul li a{
+        text-decoration: none;
+        padding: 5px 10px;
+        font-size: 16px;
+        color: black;
+    }
+
+    #active{
+        color: var(--mainPurple);
+    }
+
+    .sideBar ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        padding: 8px 0;
+    }
+
+    .sideBar .loginButton{
+        border: 1px solid var(--mainPurple);
+        color: black;
+        background-color: transparent;
+        width: 343px;
+        height: 44px;
+        box-sizing: border-box;
+        padding: 12px 24px;
+    }
+
+    .login{
+        display: none;
+    }
+
+    .investors{
+        max-width: 150px !important;
+        max-height: 47px !important;
+        border-radius: 4.66px !important;
+        align-items: center;
+        justify-content: center !important; 
+        padding: 5px !important;
+        gap: 9px !important;
+        position: relative !important;
+        right: 5px !important;
+        box-shadow: 0 1.55px 2.33px -0.78px !important;
+    }
+
+    .invetsorInfo{
+        max-width: 75px;
+        max-height: 28px;
+        gap: 3.11;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .investorHeading{
+        width: 75px;
+        height: 4px;
+        font-size: 7px;
+        margin: 0;
+        position: relative;
+        inset: 0;
+    }
+
+    .inverstorChange{
+        height: 15px;
+        width: 75px;
+        position: relative;
+        top: -12px;
+    }
+
+    .inverstorNumbers{
+        max-width: 48px;
+        height: 15px;
+        gap: 1.55px;
+        margin: 0;
+        position: relative;
+        inset: 0;
+    }
+
+    .number{
+        font-size: 11.66px;
+        height: 15px;
+        width: 29px;
+    }
+
+    .investor{
+        font-size: 5.44px;
+    }
+
+    .trendUp{
+        width: 17.77px;
+        height: 9.17px;
+        font-size: 5.44px;
+        
+        position: relative;
+        right: -10px;
+        gap: 1.55px;
+    }
+
+    .trendUpNum{
+        height: 8px;
+    }
+
+    .trendUp p{
+        height: 8px;
+        width: 10px;
+        font-size: 5.44px;
+
+    }
+
+    .trenUpIcon {
+        height: 6.22px;
+        width: 6.22px;
+    }
+
+    .chartData{
+        width: 48px;
+        height: 29px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .chartData img{
+        width: 48px;
+        height: 29px;
+
+    }
+
+    .stockCard{
+        height: 68px;
+        width: 150px;
+        background-color: white;
+        position: relative;
+        top: 170px;
+        right: 200px;
+        padding: 9px;
+        gap: 9px;
+        z-index: 4;
+    }
+
+    .stockHeader{
+        width: 131px;
+        height: 9.28px;
+    }
+
+    .stockHeader p{
+        font-size: 6.96px;
+        line-height: 10.82px;
+    }
+
+    .stockPricingContent{
+        width: 131px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .stockInfo{
+        height: 30.93px;
+        width: 75.77px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .stockPrice{
+        width: 75px;
+        max-height: 17px;
+        text-align: left;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: -50px;
+        top: -7px;
+    }
+
+    .stockPrice p{
+        font-size: 13px;
+        width: 60px;
+        height: 14px;
+         display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .stockSubtitle{
+        height: 1px;
+        text-align: center;
+        position: relative;
+    }
+
+    .stockSubtitle p{
+        width: 49px;
+        height: 3px;
+        font-size: 5.41px;
+        line-height: 17px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .stockChanges{
+        width: 75.77px;
+        height: 7.73px;
+        gap: 3.09px;
+        position: relative;
+        right: -35px;
+    }
+
+    .stockChangeUp{
+        width: 19.33px;
+        height: 7.73px;
+    }
+
+    .stockChangeUp .trendUpNum{
+        width: 11.6px;
+        height: 7.73px;
+    }
+    
+    .stockChangeUp .trendUpNum p{
+        font-size: 5.41px;
+        line-height: 7.73px;
+    }
+
+    .stockChangeUp .trendUpIcon{
+        height: 6.19px;
+        width: 6.19px;
+        font-size: 5.41px;
+
+    }
+
+    .stockChangeUp .trendUpIcon i{
+        width: 5.15px;
+        height: 2.58px;
+    }
+
+    .stockChangeUp .stockSubtitle{
+        width: 49px;
+        height: 3px;
+        line-height: 7.73px;
+        font-size: 5.41px;
+
+    }
+
+    .stockChangeUp .stockSubtitle p{
+        font-size: 5.41px;
+        width: 49px;
+        height: 3px;
+    }
+
+    .stockChart,
+    .stockChart img{
+        height: 24.74px;
+        width: 49.48px;
+    }
+
+    .all{
+        width: 375px;
+    }
+
+    main{
+        max-width: 375px;
+    }
+
+    .mainHero{
+        max-width: 375px;
+        height: 753px;
+        display: flex;
+        gap: 48px;
+        padding: 48px 16px;
+        box-sizing: border-box;
+    }
+
+    .heroContent{
+        height: 236px;
+        width: 343px;
+        position: relative;
+        top: 480px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heroText{
+        width: 343px;
+        height: 152px;
+        gap: 32px;
+        text-align: center;
+    }
+
+    .heroText .headLine{
+        width: 343px;
+        height: 55px;
+        font-size: 30px;
+        word-spacing: 5px;
+    }
+
+    .heroText .subTextBold{
+        width: 343px;
+        height: 65px;
+        position: relative;
+        line-height: 26px;
+        font-size: 21px;
+    }
+
+    .heroText .subTextLight{
+        display: none;
+    }
+
+    .startInvesting{
+        width: 174px;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 24px;
+        position: relative;
+        top: -30px;
+    }
+
+    .startInvesting p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        line-height: 24px;
+        width: 126px;
+        height: 10px;
+        word-spacing: -3px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .heroImg,
+    .heroImg img{
+        height: 273px !important;
+        width: 343px !important;
+        position: relative;
+        right: 0px !important;
+        top: 0px !important;
+    }
+
+    .heroImg{
+        right: -390px !important;
+        top: 130px !important;
+    }
+
+    .ourProducts{
+        max-width: 375px;
+        gap: 48px;
+        box-sizing: border-box;
+        padding: 48px 32px;
+        position: relative;
+        top: -100px;
+        
+    }
+
+    .products{
+        max-width: 375px;
+        gap: 48px;
+        gap: 48px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: -100px;
+    }
+
+    .ourProducts .productHead{
+        width: 311px;
+        height: 10px;
+        font-size: 16px;
+        line-height: 24px;
+        position: relative;
+        top: -70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .productHead p{
+        width: 311px;
+        height: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ourProducts .productsImages{
+        width: 311px;
+        height: 140px;
+        gap: 32px;
+        display: flex;
+    }
+
+    .productsImages .StrongLogo{
+        width: 120px;
+        height: 33.76px;
+    }
+
+    .productsImages .mainLogo{
+        width: 72px;
+        height: 71px;
+    }
+
+    .productsImages .routeLogo{
+        width: 120px;
+        height: 29.59px;
+    }
+
+    .productImagesColumnOne{
+        height: 140px;
+        width: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .productImagesColumnTwo{
+        height: 140px;
+        width: 159px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bePartner{
+        max-width: 375px;
+        max-height: 108px;
+        position: relative;
+        top: -100px;
+        /* gap: 10px; */
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    .bePartner .bePartnerBackImg .ellipse21{
+        max-width: 133.33px;
+        max-height: 133.33px;
+        right: 160px;
+        top: -10px;
+    }
+
+    .bePartnerBackImg .ellipse20{
+        max-width: 101.9px;
+        max-height: 101.9px;
+        right: 180px;
+    }
+
+    .bePartner .callToAction{
+        max-width: 322.92px;
+        max-height: 77px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        /* gap: 14px; */
+        position: relative;
+    }
+
+    .callToActionContent {
+        max-width: 322.92px;
+        max-height: 27px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* gap: 10px; */
+    }
+
+    .callToActionHeader{
+        max-width: 322.92px;
+        max-height: 9px;
+    }
+
+    .callToActionHeader p{
+        max-height: 9px;
+        font-size: 14px;
+        font-family: 'TajawalLight';
+        line-height: 20px;
+    }
+    .callToActionSub{
+        max-width: 322.92px;
+        max-height: 8px;
+    }
+
+    .callToActionSub p{
+        max-height: 8px;
+        font-size: 12px;
+        font-family: 'TajawalLight';
+        line-height: 22;
+    }
+
+    .callToAction .startInvesting{
+        max-width: 134px;
+        height: 36px;
+        position: relative;
+        top: -13px;
+    }
+    .callToAction .startInvesting p{
+        max-width: 110px;
+        max-height: 9px;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 14px 12px;
+        
+    }
+
+    .whyUs{
+        margin-top: -170px;
+        width: 375px;
+    }
+
+    .whyUsHeader{
+        max-width: 343px;
+        height: 153px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        gap: 24px;
+        position: relative;
+        left: -80px;
+    }
+
+    .whyUsTitle{
+        width: 343px;
+        height: 10px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .whyUsHeader .boldSub{
+        max-width: 343px;
+        height: 34px;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0%;
+    }
+
+    .whyUsHeader .lightSub{
+        width: 343px;
+        height: 69px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .whyUsContent{
+        width: 343px;
+        height: 682.52px;
+        display: block;
+        direction: ltr;
+        position: relative;
+        left: -80px;
+    }
+
+    .whyUsContent .happyClients{
+        max-width: 343px;
+        height: 147.52px;
+        border-radius: 5.23px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .happyClients div{
+        width: 95.47px;
+        height: 147.52px;
+        border-radius: 5.23px;
+        box-sizing: border-box;
+        padding: 17.43px 13.94px;
+        direction: ltr;
+        position: relative;
+        inset: 0;
+    }
+
+    .happyClients div p:first-child{
+        max-width: 81px;
+        height: 6px;
+        font-size: 10px;
+        line-height: 12.2px;
+    }
+
+    .happyClients div p:last-child{
+        width: 67.58px;
+        height: 32px;
+        font-size: 26.14px;
+        line-height: 31.37px;
+        letter-spacing: -2px;
+        margin: 0;
+    }
+
+    .succsessfulPartner{
+        max-width: 120.05px;
+        height: 147px;
+    }
+
+    .advantages{
+        max-width: 343px;
+        height: 347px;
+        /* margin-top: 400px; */
+    }
+
+    .advantagesHeader{
+        width: 343px;
+        height: 55px;
+        gap: 16px;
+    }
+
+    .advantagesHeader .advantagTitle{
+        width: 343px !important;
+        height: 10px !important;
+        font-size: 16px !important;
+        line-height: 24px;
+    }
+
+    .advantagesHeader .advantagSub{
+        width: 343px !important;
+        height: 29px !important;
+        font-size: 14px !important;
+        line-height: 20px;
+    }
+
+    .advantagesContent{
+        max-width: 343px;
+        height: 268px;
+        box-sizing: border-box;
+        padding-left: 16px;
+        gap: 16px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        /*  */
+    }
+
+    .advantagesContent .listItem {
+        width: 327px !important;
+        height: 28px;
+        gap: 12px;
+        display: flex;
+    }
+
+    .listItem p{
+        width: 287px !important;
+        height: 10px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+
+    .bePartnerTwo{
+        width: 375px;
+        height: 108px;
+    }
+
+    .bePartnerTwo .callToAction{
+        width: 322.92px;
+        height: 77px;
+        top: 15px;
+        right: 25px;
+        gap: 14px;
+    }
+
+    .bePartnerTwo .callToAction .callToActionContent{
+        width: 322px;
+        height: 27px;
+        gap: 10px;
+    }
+
+    .bePartnerTwo .callToActionContent .callToActionHeader {
+        width: 322px;
+        height: 9px !important;
+    }
+
+    .bePartnerTwo .callToActionContent .callToActionHeader p {
+        font-size: 14px !important;
+        font-family: 'TajawalLight';
+        line-height: 20px;
+    }
+
+    .bePartnerTwo .callToActionContent .callToActionSub{
+        width: 322px;
+        height: 9px !important;
+        display: flex;
+        align-items: center;
+    }
+
+    .bePartnerTwo .callToActionContent .callToActionSub p{
+        font-size: 12px !important;
+        font-family: 'TajawalLight';
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .bePartnerTwo .startInvesting{
+        width: 134px;
+        height: 36px;
+        border-radius: 8px;
+        box-sizing: border-box;
+        padding: 10px 12px;
+        position: relative;
+        top: 0px;
+    }
+
+    .bePartnerTwo .startInvesting p{
+        width: 110px;
+        height: 9px;
+        font-size: 10px;
+        line-height: 20px;
+        letter-spacing: 0;
+        word-spacing: 1px;
+    }
+
+
+    .bePartnerTwoBackBigImage,
+    .bePartnerTwoBackSmallImage{
+        position: relative;
+        top: 100px;
+        /* border: 3px solid red; */
+
+    }
+
+    .bePartnerLaptopImage{
+        display: none;
+    }
+    .bePartnerMobileImage{
+        display: inline;
+    }
+
+    .bePartnerTwoBackBigImage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 101px;
+        height: 101px;
+        position: relative;
+        top: -70px;
+    }
+
+    .bePartnerTwoBackBigImage .back{
+        max-width: 101px;
+        height: 101px;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        /* border: 3px solid red; */
+
+    }
+
+    .bePartnerTwoBackBigImage .front{
+        width: 75px;
+        height: 75px;
+        /* border: 3px solid red; */
+        position: absolute;
+        left: 13px;
+        top: 13px;
+    }
+
+    .bePartnerTwoBackSmallImage{
+        max-width: 57px;
+        height: 57px;
+        position: relative;
+        top: -25px;
+        left: 0px;
+    }
+
+    .bePartnerTwoBackSmallImage .front{
+        position: absolute;
+        top: 7px;
+        left: -8px;
+        /* border: 3px solid red; */
+        max-width: 57px;
+        height: 57px;
+    }
+
+    .bePartnerTwoBackSmallImage .front img{
+        position: absolute;
+   }
+
+   .ourStocks{
+    max-width: 375px;
+    height: 905px;
+    box-sizing: border-box;
+    padding: 48px 16px;
+    transform: translateY(-68px);
+   }
+
+   .ourStockHeader{
+    width: 343px;
+    height: 55px;
+    gap: 16px;
+   }
+
+   .ourStockHeader .title{
+    width: inherit;
+    height: 10px;
+    font-size: 16px;
+    line-height: 24px;
+   }
+
+   .ourStockHeader .stockHeaderSub{
+    width: inherit;
+    height: 29px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #252B37;
+   }
+
+   .ourStockContent{
+        max-width: 343px;
+        height: 706px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 48px;
+        position: relative;
+    }
+
+    .stockContentGraph{
+        width: 343px !important;
+    }
+
+    .stockContentGraph .graphLaptob{
+        display: none;
+    }
+
+    .stockContentGraph .graphMobile{
+        display: inline;
+        width: 343px;
+        height: 343px;
+        margin: 0 auto;
+        position: absolute;
+        right: 0px;
+    }
+
+    .statsText{
+        width: 343px !important;
+        height: 315px;
+    }
+
+    .statsText .statsTitle{
+        width: 343px;
+        height: 14px;
+    }
+
+    .statsTitle p{
+        width: inherit;
+        height: inherit;
+        font-size: 16px;
+    }
+
+    .statsTitle p .num{
+        height: 11px;
+        font-size: 18px !important;
+    }
+
+    .statsList{
+        width: 343px !important;
+    }
+
+    .statsList .listItem,
+    .listItem p{
+        width:  343px !important;
+    }
+
+
+    
+.bePartnerThree{
+    width: 375px;
+    height: 108px;
+    background-color: var(--mainPurple);
+    transform: translateY(-70px);
+    justify-content: space-between;
+}
+
+.bePartnerThree .callToAction{
+    width: 322.92px;
+    height: 77px;
+    right: 20.04px;
+    gap: 14px;
+}
+
+.bePartnerThree .callToAction .callToActionContent{
+    width: 322.92px;
+    height: 27px;
+    gap: 10px;
+}
+
+.bePartnerThree .callToActionHeader{
+    width: 322.92;
+    height: 9px;
+    font-size: 14px !important;
+}
+
+.bePartnerThree .callToActionSub{
+    width: inherit;
+    height: 8px;
+    font-size: 12px;
+}
+
+.bePartnerThree .linePattern{
+    width: 50px;
+    height: 50px;
+}
+
+.bePartnerThree .startInvesting{
+    top: 0px;
+}
+
+footer{
+    width: 375px !important;
+    height: 372px !important;
+    padding: 24px 16px 16px;
+    transform: translateY(-70px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerContent{
+    width: 322px;
+    display: flex;
+    flex-wrap: wrap !important;
+    gap: 0;
+}
+
+.abuElzet{
+    width: 288px;
+    height: 65px;
+    gap: 20px;
+}
+
+.abuElzetTitle{
+    width: inherit;
+    height: 28px;
+    margin: 0;
+}
+
+.abuElzetSub{
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.abuElzet .startInvesting{
+    display: none;
+}
+
+.footerLinks{
+    width: 97px;
+    height: 140px;
+    gap: 16px;
+}
+
+.links,
+.link{
+    width: inherit;
+    font-size: 12px;
+    margin: 13px 0;
+}
+
+.whoWeAreLinks{
+    width: 69px;
+    height: 82px;
+    gap: 16px;
+    position: relative;
+    left: -60px;
+}
+
+.followUs{
+    display: none;
+}
+
+.rights{
+    width: 343px;
+    height: 40px;
+    padding-top: 13px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rights p{
+    width: 190px !important;
+    height: 9px;
+    font-size: 10px !important;
+    font-family: 'TajawalLight';
+}
+
+.rights .followUsOn{
+    width: 110px;
+    height: 26px;
+    display: flex;
+}
+
+.followUsOn .appIcon{
+    width: 26px;
+    height: 26px;
+}
+
+
+}

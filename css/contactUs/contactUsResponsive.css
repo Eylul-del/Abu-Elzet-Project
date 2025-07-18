@@ -1,0 +1,195 @@
+/* footer,
+.bePartnerThree{
+    margin-top: 0;
+    transform: translateY(0);
+} */
+
+/*root colors*/
+
+:root{
+    --mainPurple: #605BFF;
+    --navGray: #717680;
+}
+
+/*fonts*/
+
+@font-face {
+  font-family: 'TajawalMedium';
+  src: url('/font/Tajawal-Medium.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalExtraLight';
+  src: url('/font/Tajawal-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalLight';
+  src: url('/font/Tajawal-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalRegular';
+  src: url('/font/Tajawal-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalBold';
+  src: url('/font/Tajawal-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalExtraBold';
+  src: url('/font/Tajawal-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TajawalBlack';
+  src: url('/font/Tajawal-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+*{
+     outline: 1px solid limegreen; 
+}*/
+
+@media (max-width: 375px) {
+    
+.ContactUsMain{
+    width: 375px;
+    position: relative;
+    height: 881px;
+}
+
+.ContactUsMain .ContactUsHeader{
+    width: 343px !important;
+    height: 36px;
+    gap: 16px;
+    position: relative;
+    right: -80px;
+    bottom: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.ContactUsHeader .title p{
+    width: 343px;
+    height: 11px;
+    font-size: 18px;
+}
+
+
+.sub,
+.sub p{
+    width: 343px;
+    height: 9px;
+    font-size: 15px;
+    font-family: 'TajawalLight';
+}
+
+.ContectUsContent{
+    width: 343px;
+    height: 601px;
+    box-sizing: border-box;
+    padding: 0 24px;
+    position: relative;
+    right: -80px;
+    border-radius: 16px;
+    box-shadow: none;
+}
+
+.ContectUsContent form{
+    box-sizing: border-box;
+    width: 343px;
+    height: 513px;
+    gap: 0;
+}
+
+form .nameInfo,
+.name,
+.surname,
+.phoneNum,
+.massageSubject,
+.massage{
+    width: 343px !important;
+    height: 84px;
+    gap: 10px;
+    margin-top: 0px;
+}
+
+.nameInfo{
+    flex-direction: column !important;
+    gap: 40px;
+    width: 343px;
+    height: 200px !important;
+    position: relative;
+    bottom: -60px;
+}
+
+.name input,
+.surname input{
+    min-width: 343px !important;
+    height: 44px;
+    padding: 10px 14px;
+}
+
+.phoneNum .inputIcon input{
+    width: 267px;
+    height: 44px;
+    box-sizing: border-box;
+    padding: 10px 14px;
+}
+
+.phoneNum{
+    position: relative;
+    bottom: -80px;
+}
+
+.massageSubject{
+    position: relative;
+    bottom: -100px;
+}
+
+.massageSubject input{
+    width: 300px;
+}
+
+.massage{
+    position: relative;
+    top: 120px;
+    width: 343px;
+    height: 154px;
+}
+
+.massage textarea{
+    width: 343px !important;
+    height: 138px !important;
+    overflow: hidden;
+}
+
+.send{
+    width: 343px;
+    height: 48px;
+    margin-top: 160px;
+}
+
+}

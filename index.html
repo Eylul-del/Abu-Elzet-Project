@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/font/Tajawal-Medium.ttf">
+    <link rel="stylesheet" href="/font/Tajawal-Black.ttf">
+    <link rel="stylesheet" href="/font/Tajawal-Bold.ttf">
+    <link rel="stylesheet" href="font/Tajawal-ExtraBold.ttf">
+    <link rel="stylesheet" href="font/Tajawal-ExtraLight.ttf">
+    <link rel="stylesheet" href="font/Tajawal-Light.ttf">
+    <link rel="stylesheet" href="font/Tajawal-Regular.ttf">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/main/main.css">
+    <link rel="stylesheet" href="./css/main/mainResposive.css">
+    <title>Abu Elzet Landing Page</title>
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+        <nav>
+            <div class="main" id="active">
+                <a href="main.html">الرئيسية</a>
+            </div>
+            <div class="stocks">
+                <a href="stocks.html">الاسهم</a>
+            </div>
+            <div class="whoWeAre">
+                <a href="aboutUs.html">من نحن</a>
+            </div>
+            <div class="contactUs">
+                <a href="contactUs.html">تواصل معنا</a>
+            </div>
+            <div class="contract">
+                <a href="contract.html">العقد</a>
+            </div>
+            <div class="populerQuestions">
+                <a href="populerQuestions.html">الاسئلة الشائعة</a>
+            </div>
+            <div class="termsAndConditions">
+                <a href="termsAndConditions.html">الشروط و الاحكام</a>
+            </div>
+        </nav>
+        <div class="login">
+            <a href="login/login.html" class="loginButton">
+                <p>تسجيل الدخول</p>
+            </a>
+        </div>
+        <div class="navList" onclick="showNavList()">
+            <img src="/images/Frame 92.png" alt="nav list">
+        </div>
+        <div class="sideBar" id="sideBar">
+            <ul>
+                <li><a href="main.html" id="active">الرئيسية</a></li>
+                <li><a href="stocks.html">الاسهم</a></li>
+                <li><a href="aboutUs.html">من نحن</a></li>
+                <li><a href="contactUs.html">تواصل معنا</a></li>
+                <li><a href="contract.html">العقد</a></li>
+                <li><a href="termsAndConditions.html">الشروط و الاحكام</a></li>
+                <li>
+                    <a href="login/login.html" class="loginButton">
+                        <p>تسجيل الدخول</p>
+                    </a>
+                </li>
+            </ul>
+            <div class="hideBar" onclick="hideBar()">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+
+    </header>
+    <div class="all">
+        <main>
+            <div class="investors">
+                <div class="invetsorInfo">
+                    <div class="investorHeading">
+                        <p>المستثمرين</p>
+                    </div>
+                    <div class="inverstorChange">
+                        <div class="inverstorNumbers">
+                                <p class="number">5,000</p>
+                                <p class="investor">مستثمر</p>
+                        </div>
+                        <div class="trendUp">
+                            <div class="trendUpNum">
+                                <p>20%</p>
+                            </div>
+                            <div class="trenUpIcon">
+                                <i class="fa-solid fa-arrow-trend-up"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chartData">
+                    <img src="/images/_Chart data.png" >
+                </div>
+            </div>
+
+            <div class="stockCard">
+                <div class="stockHeader">
+                    <p class="stockTitle">سعر السهم</p>
+                </div>
+                <div class="stockPricingContent">
+                    <div class="stockChart flex">
+                        <img src="/images/_Chart mini.png" >
+                    </div>
+                    <div class="stockInfo">
+                        <div class="stockPrice">
+                            <p>100$</p>
+                        </div>
+                        <div class="stockChanges">
+                            <div class="stockChangeUp">
+                                <div class="trendUpNum">
+                                    <p>40%</p>
+                                </div>
+                                <div class="trendUpIcon">
+                                    <i class="fa-solid fa-arrow-trend-up"></i>
+                                </div>
+                            </div>
+                            <div class="stockSubtitle">
+                                <p>ارتفاع في سعر السهم</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mainHero">
+                <div class="heroContent">
+                    <div class="heroText">
+                        <div class="headLine">
+                        <p>استثمر اليوم... وكن شريكًا في نجاح الغد.</p>
+                        </div>
+                        <div class="subTextBold">
+                            <p>فرصة حقيقية لامتلاك حصة من نمو شركتنا. تابع أرباحك، وراقب أموالك وهي تنمو بثقة.</p>
+                        </div>
+                        <div class="subTextLight">
+                            <p>استثمر في أسهم شركة موثوقة تقدم لك تجربة استثمارية شفافة وآمنة. مع عدد متزايد من المستثمرين، وإمكانيات نمو مستمرة، أنت على بُعد خطوة واحدة من تحقيق أهدافك المالية.</p>
+                        </div>
+                    </div>
+                    <div class="startInvesting" id="startInvesting">
+                        <a href="stocks.html">ابدا بالاستثمار الان</a>
+                    </div>
+                </div>
+                <div class="heroImg">
+                    <img src="/images/handsome-businessman-with-laptop-isolated-white-background 1.png" >
+                </div>
+            </div>
+        </main>
+
+        <div class="ourProducts">
+            <div class="products">
+                <div class="procuctContent">
+                    <div class="productHead">
+                        <p>منتجاتنا</p>
+                    </div>
+                    <div class="productsImages">
+                        <div class="productImagesColumnOne">
+                            <img src="/images/products/image 11.png" class="routeLogo">
+                            <img src="/images/products/image 14.png" class="mainLogo">
+                        </div>
+                        <div class="productImagesColumnTwo">
+                            <img src="/images/products/image 14.png" class="mainLogo">
+                            <img src="/images/products/image 15.png" class="StrongLogo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bePartner">
+            <div class="callToAction">
+                <div class="callToActionContent">
+                    <div class="callToActionHeader">
+                        <p>استثمر اليوم... وكن شريكًا في نجاح الغد</p>
+                    </div>
+                    <div class="callToActionSub">
+                        <p>طريقك نحو الحرية المالية يبدأ من هنا!</p>
+                    </div>
+                </div>
+                <div class="startInvesting">
+                    <a href="stocks.html">ابدا بالاستثمار الان</a>
+                </div>
+            </div>
+            <div class="bePartnerBackImg">
+                <img src="/images/Ellipse 21.png" class="ellipse21">
+                <img src="/images/Ellipse 20.png" class="ellipse20">
+            </div>
+        </div>
+
+
+        <div class="whyUs">
+                <div class="whyUsHeader">
+                        <p class="whyUsTitle">لماذا نحن</p>
+                        <p class="boldSub">استثمارك معنا ليس مجرد أرقام… بل شراكة مبنية على الشفافية والنتائج.</p>
+                        <p class="lightSub">نقدّم لك فرصة استثمارية آمنة، مدعومة بفريق من الخبراء، وتقارير واضحة تساعدك على اتخاذ قراراتك بثقة.  من خلال منصتنا، يمكنك متابعة أداء أسهمك لحظة بلحظة، مع ضمان الشفافية الكاملة في كل عملية استثمارية</p>
+                </div>
+                
+            <div class="whyUsContent">
+                <div class="happyClients">
+                    <div class="positiveEvaluation">
+                        <p>تقييم عالي</p>
+                        <p>200+</p>
+                    </div>
+                    <div class="succsessfulPartner">
+                        <p>شريك نجاح</p>
+                        <p>4,000+</p>
+                    </div>
+                    <div class="returnOnInvestment">
+                        <p>عائد علي الأستثمار</p>
+                        <p>25%</p>
+                    </div>
+                </div>
+
+                <div class="advantages">
+                    <div class="advantagesHeader">
+                        <p class="advantagTitle">تعرف علي اهم مميزات العمل معنا</p>
+                        <p class="advantagSub">نقدّم لك فرصة استثمارية آمنة، مدعومة بفريق من الخبراء، وتقارير واضحة تساعدك على اتخاذ قراراتك بثقة.</p>
+                    </div>
+                    <div class="advantagesContent">
+                        <div class="listItem">
+                            <div class="check">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <p>عائد استثماري سنوي يصل حتى 25٪</p>
+                        </div>
+                        <div class="listItem">
+                            <div class="check">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <P>تحديث لحظي لأسعار الأسهم</P>
+                        </div>
+                        <div class="listItem">
+                            <div class="check">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <P>توزيع أرباح دوري</P>
+                        </div>
+
+                        <div class="listItem">
+                            <div class="check">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <P>عقود رسمية وشفافة 100٪</P>
+                        </div>
+
+                        <div class="listItem">
+                            <div class="check">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <P>عقود رسمية وشفافة 100٪</P>
+                        </div>
+
+                        <div class="listItem">
+                            <div class="check">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <P>عقود رسمية وشفافة 100٪</P>
+                        </div>
+                        <div class="listItem">
+                            <div class="check">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <P>عقود رسمية وشفافة 100٪</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bePartnerTwo">
+                <div class="callToAction">
+                    <div class="callToActionContent">
+                        <div class="callToActionHeader">
+                            <p>استثمر اليوم... وكن شريكًا في نجاح الغد</p>
+                        </div>
+                        <div class="callToActionSub">
+                            <p>طريقك نحو الحرية المالية يبدأ من هنا!</p>
+                        </div>
+                    </div>
+                    <div class="startInvesting">
+                        <a href="stocks.html">ابدا بالاستثمار الان</a>
+                    </div>
+                </div>
+
+                <div class="bePartnerTwoBackBigImage">
+                    <div class="back">
+                        <img src="/images/Group 126559.png" class="bePartnerLaptopImage">
+                        <img src="/images/mobile/Ellipse 12.png" class="bePartnerMobileImage">
+                    </div>
+                    <div class="front">
+                        <img src="/images/Ellipse 13.png" class="bePartnerLaptopImage">
+                        <img src="/images/mobile/Ellipse 13.png" class="bePartnerMobileImage">
+                    </div>
+                </div>
+                <div class="bePartnerTwoBackSmallImage">
+                    <div class="back">
+                        <img src="/images/Group 126559 (1).png" class="bePartnerLaptopImage">
+                        <img src="/images/mobile/Ellipse 12 (1).png" class="bePartnerMobileImage">
+                    </div>
+                    <div class="front">
+                        <img src="/images/Ellipse 13 (1).png" class="bePartnerLaptopImage">
+                        <img src="/images/mobile/Ellipse 13 (1).png" class="bePartnerMobileImage">
+                    </div>
+                </div>
+            </div>
+
+        <div class="ourStocks">
+            <div class="ourStockHeader">
+                <p class="title">أسهمنا</p>
+                <p class="stockHeaderSub">بدأنا بعدد محدود من الأسهم عند الإطلاق، لكن مع مرور الوقت وثقة المستثمرين المتزايدة، تجاوزنا التوقعات.</p>
+            </div>
+
+            <div class="ourStockContent">
+                <div class="stockContentGraph">
+                    <img src="/images/Line and bar chart.png" alt="graph" class="graphLaptob">
+                    <img src="/images/Line and bar chart mobile.png" alt="graph" class="graphMobile">
+                </div>
+                <div class="statsText">
+                    <div class="statsTitle">
+                        <p> 
+                            <span class="percant">%</span>
+                            <span class="num">800</span>
+                             زيادة في اعداد الأسهم المطروحة </p>
+                    </div>
+                    <div class="statsList">
+                        <div class="listItem">
+                            <div class="check">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <p>عائد استثماري سنوي يصل حتى 25٪</p>
+                        </div>
+                        <div class="listItem">
+                            <div class="check">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <P>تحديث لحظي لأسعار الأسهم</P>
+                        </div>
+                        <div class="listItem">
+                            <div class="check">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <P>توزيع أرباح دوري</P>
+                        </div>
+
+                        <div class="listItem">
+                            <div class="check">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <P>عقود رسمية وشفافة 100٪</P>
+                        </div>
+
+                        <div class="listItem">
+                            <div class="check">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <P>عقود رسمية وشفافة 100٪</P>
+                        </div>
+
+                        <div class="listItem">
+                            <div class="check">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <P>عقود رسمية وشفافة 100٪</P>
+                        </div>
+                        <div class="listItem">
+                            <div class="check">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <P>عقود رسمية وشفافة 100٪</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bePartnerThree">
+            <img src="/images/Line pattern.png" alt="line pattern" class="linePattern">
+
+            <div class="callToAction">
+                <div class="callToActionContent">
+                    <div class="callToActionHeader">
+                        <p>استثمر اليوم... وكن شريكًا في نجاح الغد</p>
+                    </div>
+                    <div class="callToActionSub">
+                        <p>طريقك نحو الحرية المالية يبدأ من هنا!</p>
+                    </div>
+                </div>
+                <div class="startInvesting">
+                    <a href="stocks.html">ابدا بالاستثمار الان</a>
+                </div>
+            </div>
+
+            <img src="/images/Line pattern.png" alt="line pattern" class="linePattern">
+
+        </div>
+
+        <footer>
+            <div class="footerContent">
+                <div class="abuElzet">
+                    <p class="abuElzetTitle">أبو الزيت</p>
+                    <p class="abuElzetSub">فرصة حقيقية لامتلاك حصة من نمو شركتنا. تابع أرباحك، وراقب أموالك وهي تنمو بثقة.</p>
+                    <div class="startInvesting">
+                            <p> ابدا بالاستثمار الان</p>
+                    </div>
+                </div>
+                <div class="footerLinks">
+                    <p class="linksTitle">روابط سريعة</p>
+                    <div class="links">
+                        <p class="link">الرئيسية</p>
+                        <p class="link">الاسهم</p>
+                        <p class="link">العقد</p>
+                        <p class="link">اتفاقية المستخدم</p>
+                    </div>
+                </div>
+                <div class="whoWeAreLinks">
+                    <p class="whoWeAreTitle">من نحن</p>
+                    <div class="links">
+                        <p class="link">من نحن</p>
+                        <p class="link">تواصل معنا</p>
+                    </div>
+                </div>
+                <div class="followUs">
+                    <p>تابعنا</p>
+                    <div class="followUsOn">
+                        <div class="appIcon">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                        <div class="appIcon">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="appIcon">
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rights">
+                <p>جميع الحقوق محفوظة ©  2025 أبو الزيت</p>
+                <div class="followUsOn">
+                        <div class="appIcon">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                        <div class="appIcon">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="appIcon">
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </div>
+            </div>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
