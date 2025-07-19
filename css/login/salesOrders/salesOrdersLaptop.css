@@ -99,7 +99,7 @@ footer{
 }
 
 .selected{
-    background-color: var(--mainPurple);
+    background-color: var(--mainPurple) !important;
     color: white !important;
 }
 
