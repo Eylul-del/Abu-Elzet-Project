@@ -19,49 +19,49 @@ footer,
 
 @font-face {
   font-family: 'TajawalMedium';
-  src: url('/font/Tajawal-Medium.ttf') format('truetype');
+  src: url('../../font/Tajawal-Medium.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TajawalExtraLight';
-  src: url('/font/Tajawal-ExtraLight.ttf') format('truetype');
+  src: url('../../font/Tajawal-ExtraLight.ttf') format('truetype');
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TajawalLight';
-  src: url('/font/Tajawal-Light.ttf') format('truetype');
+  src: url('../../font/Tajawal-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TajawalRegular';
-  src: url('/font/Tajawal-Regular.ttf') format('truetype');
+  src: url('../../font/Tajawal-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TajawalBold';
-  src: url('/font/Tajawal-Bold.ttf') format('truetype');
+  src: url('../../font/Tajawal-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TajawalExtraBold';
-  src: url('/font/Tajawal-ExtraBold.ttf') format('truetype');
+  src: url('../../font/Tajawal-ExtraBold.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TajawalBlack';
-  src: url('/font/Tajawal-Black.ttf') format('truetype');
+  src: url('../../font/Tajawal-Black.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
 }
