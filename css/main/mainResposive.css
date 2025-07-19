@@ -5,10 +5,8 @@
 
 
 @media (max-width: 400px) {
-    
-
     header{
-        max-width: 375px;
+        max-width: 400px;
         justify-content: space-between;
         box-sizing: border-box;
         padding: 0 10px;
@@ -329,15 +327,15 @@
     }
 
     .all{
-        width: 375px;
+        width: 400px;
     }
 
     main{
-        max-width: 375px;
+        max-width: 400px;
     }
 
     .mainHero{
-        max-width: 375px;
+        max-width: 400px;
         height: 753px;
         display: flex;
         gap: 48px;
@@ -421,7 +419,7 @@
     }
 
     .ourProducts{
-        max-width: 375px;
+        max-width: 400px;
         gap: 48px;
         box-sizing: border-box;
         padding: 48px 32px;
@@ -431,7 +429,7 @@
     }
 
     .products{
-        max-width: 375px;
+        max-width: 400px;
         gap: 48px;
         gap: 48px;
         padding: 0;
@@ -502,7 +500,7 @@
     }
 
     .bePartner{
-        max-width: 375px;
+        max-width: 400px;
         max-height: 108px;
         position: relative;
         top: -100px;
@@ -584,7 +582,7 @@
 
     .whyUs{
         margin-top: -170px;
-        width: 375px;
+        width: 400px;
     }
 
     .whyUsHeader{
@@ -727,7 +725,7 @@
 
 
     .bePartnerTwo{
-        width: 375px;
+        width: 400px;
         height: 108px;
     }
 
@@ -857,7 +855,7 @@
    }
 
    .ourStocks{
-    max-width: 375px;
+    max-width: 400px;
     height: 905px;
     box-sizing: border-box;
     padding: 48px 16px;
@@ -945,7 +943,7 @@
 
     
 .bePartnerThree{
-    width: 375px;
+    width: 400px;
     height: 108px;
     background-color: var(--mainPurple);
     transform: translateY(-70px);
@@ -987,7 +985,7 @@
 }
 
 footer{
-    width: 375px !important;
+    width: 400px !important;
     height: 372px !important;
     padding: 24px 16px 16px;
     transform: translateY(-70px);

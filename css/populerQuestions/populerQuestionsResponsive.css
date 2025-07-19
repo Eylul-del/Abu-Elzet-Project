@@ -81,7 +81,7 @@ footer,
 }
 
 .populerCuestions{
-    width: 375px;
+    width: 400px;
     height: 750px !important;
     background: white;
 }
@@ -129,7 +129,7 @@ footer,
 }
 
 .otherQuesContainer{
-    width: 375px;
+    width: 400px;
     height: 450px  !important;
     display: flex;
     align-items: center;
