@@ -65,7 +65,7 @@ footer,
     outline: 1px solid limegreen;
 } */
 
-@media (max-width:375px) {
+@media (max-width: 400px) {
     .contractMain{
         width: 375px !important;
         height: 974px;

@@ -72,7 +72,7 @@ I use outline so I can see the actual volume of each container with padding or w
     color: var(--mainPurple);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
     
 
 footer,

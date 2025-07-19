@@ -68,7 +68,7 @@ body{
     outline: 1px solid limegreen;
 } */
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
     
 .login{
     display: none !important;
